@@ -11,7 +11,7 @@
   "name": "Café Especial Peligro",
   "description": "Café Peligro es un café especial que necesita advertencia.",
   "category": {
-    "$oid": "5f15d5cdcb4a6642bddc0fe9e"
+    "$oid": "5f15d545f3a046427a1c26e2"
   },
   "countInStock": 25,
   "__v": 0
