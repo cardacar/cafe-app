@@ -75,18 +75,18 @@ const Confirm = (props) => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.titleContainer}>
-        <Text style={{ fontSize: 20, fontWeight: "bold" }}>Confirm Order</Text>
+        <Text style={{ fontSize: 20, fontWeight: "bold" }}>Confirmar orden</Text>
         {props.route.params ? (
           <View style={{ borderWidth: 1, borderColor: "orange" }}>
-            <Text style={styles.title}>Shipping to:</Text>
+            <Text style={styles.title}>Enviar a:</Text>
             <View style={{ padding: 8 }}>
-              <Text>Address: {finalOrder.order.order.shippingAddress1}</Text>
-              <Text>Address2: {finalOrder.order.order.shippingAddress2}</Text>
-              <Text>City: {finalOrder.order.order.city}</Text>
+              <Text>Direccion: {finalOrder.order.order.shippingAddress1}</Text>
+              <Text>Direccion2: {finalOrder.order.order.shippingAddress2}</Text>
+              <Text>Ciudad: {finalOrder.order.order.city}</Text>
               <Text>Zip Code: {finalOrder.order.order.zip}</Text>
-              <Text>Country: {finalOrder.order.order.country}</Text>
+              <Text>Estado: {finalOrder.order.order.country}</Text>
             </View>
-            <Text style={styles.title}>Items:</Text>
+            <Text style={styles.title}>Productos:</Text>
             {/* CHANGE THIS */}
             {productUpdate && (
               <>
@@ -112,7 +112,7 @@ const Confirm = (props) => {
           </View>
         ) : null}
         <View style={{ alignItems: "center", margin: 20 }}>
-          <Button title={"Place order"} onPress={confirmOrder} />
+          <Button title={"Lugar"} onPress={confirmOrder} />
         </View>
       </View>
     </ScrollView>

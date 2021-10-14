@@ -43,15 +43,15 @@ const ProductCard = (props) => {
                         Toast.show({
                             topOffset: 60,
                             type: "success",
-                            text1: `${name} added to Cart`,
-                            text2: "Go to your cart to complete order"
+                            text1: `${name} agregadoa al carrito`,
+                            text2: "ir al carro"
                         })
                     }}
                     >
-                        <Text style={{ color: "white"}}>Add</Text>
+                        <Text style={{ color: "white"}}>Agregar</Text>
                     </EasyButton>
                 </View>
-            ) : <Text style={{ marginTop: 20 }}>Currently Unavailable</Text>}
+            ) : <Text style={{ marginTop: 20 }}>No disponible</Text>}
         </View>
     )
 }

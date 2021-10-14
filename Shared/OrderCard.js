@@ -11,9 +11,9 @@ import axios from "axios";
 import baseURL from "../assets/common/baseUrl";
 
 const codes = [
-  { name: "pending", code: "3" },
-  { name: "shipped", code: "2" },
-  { name: "delivered", code: "1" },
+  { name: "Pendiente", code: "3" },
+  { name: "comprado", code: "2" },
+  { name: "en viaje", code: "1" },
 ];
 
 const OrderCard = (props) => {
@@ -126,7 +126,7 @@ const OrderCard = (props) => {
               iosIcon={<Icon color={"#007aff"} name="arrow-down" />}
               style={{ width: undefined }}
               selectedValue={statusChange}
-              placeholder="Change Status"
+              placeholder="Cambiar status"
               placeholderIconColor={{ color: "#007aff" }}
               onValueChange={(e) => setStatusChange(e)}
             >
@@ -137,7 +137,7 @@ const OrderCard = (props) => {
               })}
             </Picker>
             <EasyButton secondary large onPress={() => updateOrder()}>
-              <Text style={{ color: "white" }}>Update</Text>
+              <Text style={{ color: "white" }}>Actualizar</Text>
             </EasyButton>
           </View>
         ) : null}

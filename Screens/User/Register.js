@@ -60,28 +60,28 @@ const Register = (props) => {
       extraHeight={200}
       enableOnAndroid={true}
     >
-      <FormContainer title={"Register"}>
+      <FormContainer title={"Registrar"}>
         <Input
-          placeholder={"Email"}
+          placeholder={"Correo"}
           name={"email"}
           id={"email"}
           onChangeText={(text) => setEmail(text.toLowerCase())}
         />
         <Input
-          placeholder={"Name"}
+          placeholder={"Nombre"}
           name={"name"}
           id={"name"}
           onChangeText={(text) => setName(text)}
         />
         <Input
-          placeholder={"Phone Number"}
+          placeholder={"Numero"}
           name={"phone"}
           id={"phone"}
           keyboardType={"numeric"}
           onChangeText={(text) => setPhone(text)}
         />
         <Input
-          placeholder={"Password"}
+          placeholder={"Contraseña"}
           name={"password"}
           id={"password"}
           secureTextEntry={true}
@@ -92,7 +92,7 @@ const Register = (props) => {
         </View>
         <View>
           <EasyButton large primary onPress={() => register()}>
-            <Text style={{ color: "white" }}>Register</Text>
+            <Text style={{ color: "white" }}>Registro</Text>
           </EasyButton>
         </View>
         <View>
@@ -101,7 +101,7 @@ const Register = (props) => {
             secondary
             onPress={() => props.navigation.navigate("Login")}
           >
-            <Text style={{ color: "white" }}>Back to Login</Text>
+            <Text style={{ color: "white" }}>Volver a Login</Text>
           </EasyButton>
         </View>
       </FormContainer>

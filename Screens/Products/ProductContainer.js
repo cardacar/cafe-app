@@ -113,7 +113,7 @@ const ProductContainer = (props) => {
    <Item>
      <Icon name="ios-search" />
      <Input
-       placeholder="Search"
+       placeholder="Busqueda"
        onFocus={openList}
        onChangeText={(text) => searchProduct(text)}
      />

@@ -17,13 +17,13 @@ const SingleProduct = (props) => {
     useEffect(() => {
         if (props.route.params.item.countInStock == 0) {
             setAvailability(<TrafficLight unavailable></TrafficLight>);
-            setAvailabilityText("Unvailable")
+            setAvailabilityText("No disponible")
         } else if (props.route.params.item.countInStock <= 5) {
             setAvailability(<TrafficLight limited></TrafficLight>);
-            setAvailabilityText("Limited Stock")
+            setAvailabilityText("Limite Stock")
         } else {
             setAvailability(<TrafficLight available></TrafficLight>);
-            setAvailabilityText("Available")
+            setAvailabilityText("Disponible")
         }
 
         return () => {
@@ -52,7 +52,7 @@ const SingleProduct = (props) => {
                 <View style={styles.availabilityContainer}>
                     <View style={styles.availability}>
                         <Text style={{ marginRight: 10 }}>
-                            Availability: {availabilityText}
+                            Disponibilidad: {availabilityText}
                         </Text>
                         {availability}
                     </View>
@@ -72,12 +72,12 @@ const SingleProduct = (props) => {
                         Toast.show({
                             topOffset: 60,
                             type: "success",
-                            text1: `${item.name} added to Cart`,
-                            text2: "Go to your cart to complete order"
+                            text1: `${item.name} añadido al carrito`,
+                            text2: "ir al carro"
                         })
                 }}
                    >
-                       <Text style={{ color: 'white'}}>Add</Text>
+                       <Text style={{ color: 'white'}}>Agregar</Text>
                    </EasyButton>
                 </Right>
             </View>

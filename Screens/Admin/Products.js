@@ -84,7 +84,7 @@ const Products = (props) => {
         }
         setProductFilter(
             productList.filter((i) => 
-                i.name.toLowerCase().includes(text.toLowerCase())
+                i.name.includes(text)
             )
         )
     }
@@ -134,7 +134,7 @@ const Products = (props) => {
               <Item style={{ padding: 5 }}>
                   <Icon name="search" />
                   <Input 
-                    placeholder="Search"
+                    placeholder="Buscar"
                     onChangeText={(text) => searchProduct(text)}
                   />
               </Item>

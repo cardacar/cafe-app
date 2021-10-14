@@ -190,7 +190,7 @@ const ProductForm = (props) => {
     }
 
     return (
-       <FormContainer title="Add Product">
+       <FormContainer title="Agregar producto">
            <View style={styles.imageContainer}>
                <Image style={styles.image} source={{uri: mainImage}}/>
                <TouchableOpacity onPress={pickImage} style={styles.imagePicker}>
@@ -201,7 +201,7 @@ const ProductForm = (props) => {
                <Text style={{ textDecorationLine: "underline"}}>Brand</Text>
            </View>
            <Input 
-            placeholder="Brand"
+            placeholder="Marca"
             name="brand"
             id="brand"
             value={brand}
@@ -211,7 +211,7 @@ const ProductForm = (props) => {
                <Text style={{ textDecorationLine: "underline"}}>Name</Text>
            </View>
            <Input 
-            placeholder="Name"
+            placeholder="Nombre"
             name="name"
             id="name"
             value={name}
@@ -221,7 +221,7 @@ const ProductForm = (props) => {
                <Text style={{ textDecorationLine: "underline"}}>Price</Text>
            </View>
            <Input 
-            placeholder="Price"
+            placeholder="Precio"
             name="price"
             id="price"
             value={price}
@@ -243,7 +243,7 @@ const ProductForm = (props) => {
                <Text style={{ textDecorationLine: "underline"}}>Description</Text>
            </View>
            <Input 
-            placeholder="Description"
+            placeholder="Descripcion"
             name="description"
             id="description"
             value={description}
@@ -254,7 +254,7 @@ const ProductForm = (props) => {
                     mode="dropdown"
                     iosIcon={<Icon color={"#007aff"} name="arrow-down" />}
                     style={{ width: undefined }}
-                    placeholder="Select your Category"
+                    placeholder="Seleccione su categoria"
                     selectedValue={pickerValue}
                     placeholderStyle={{ color: "#007aff"}}
                     placeholderIconColor="#007aff"

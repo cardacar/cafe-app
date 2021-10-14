@@ -69,26 +69,26 @@ const Checkout = (props) => {
         >
             <FormContainer title={"Shipping Address"}>
                 <Input
-                    placeholder={"Phone"}
+                    placeholder={"Telefono"}
                     name={"phone"}
                     value={phone}
                     keyboardType={"numeric"}
                     onChangeText={(text) => setPhone(text)}
                 />
                    <Input
-                    placeholder={"Shipping Address 1"}
+                    placeholder={"Direccion de compra"}
                     name={"ShippingAddress1"}
                     value={address}
                     onChangeText={(text) => setAddress(text)}
                 />
                    <Input
-                    placeholder={"Shipping Address 2"}
+                    placeholder={"Direccion de compra 2"}
                     name={"ShippingAddress2"}
                     value={address2}
                     onChangeText={(text) => setAddress2(text)}
                 />
                    <Input
-                    placeholder={"City"}
+                    placeholder={"Ciudad"}
                     name={"city"}
                     value={city}
                     onChangeText={(text) => setCity(text)}
@@ -106,7 +106,7 @@ const Checkout = (props) => {
                         iosIcon={<Icon name="arrow-down" color={"#007aff"} />}
                         style={{ width: undefined }}
                         selectedValue={country}
-                        placeholder="Select your country"
+                        placeholder="Selecciona tu pais"
                         placeholderStyle={{ color: '#007aff' }}
                         placeholderIconColor="#007aff"
                         onValueChange={(e) => setCountry(e)}
@@ -121,7 +121,7 @@ const Checkout = (props) => {
                     </Picker>
                 </Item>
                 <View style={{ width: '80%', alignItems: "center" }}>
-                    <Button title="Confirm" onPress={() => checkOut()}/>
+                    <Button title="Confirmar" onPress={() => checkOut()}/>
                 </View>
             </FormContainer>
         </KeyboardAwareScrollView>
