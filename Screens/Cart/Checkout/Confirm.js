@@ -112,7 +112,11 @@ const Confirm = (props) => {
           </View>
         ) : null}
         <View style={{ alignItems: "center", margin: 20 }}>
-          <Button title={"Lugar"} onPress={confirmOrder} />
+          <Button title={"Ordenar"} onPress={() => {
+            props.navigation.navigate("Home")
+            props.clearCart()
+
+          }} />
         </View>
       </View>
     </ScrollView>
